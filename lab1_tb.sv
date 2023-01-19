@@ -5,11 +5,11 @@ module lab1_tb;
    
     logic [9:0] SW;
     logic [6:0] HEX0;
-	logic [6:0] HEX1;
-	logic [6:0] HEX2;
-	logic [6:0] HEX3;
-	logic [6:0] HEX4;
-	logic [6:0] HEX5;
+    logic [6:0] HEX1;
+    logic [6:0] HEX2;
+    logic [6:0] HEX3;
+    logic [6:0] HEX4;
+    logic [6:0] HEX5;
    
     lab1 l1 (.HEX5(HEX5),
              .HEX4(HEX4),
@@ -20,57 +20,57 @@ module lab1_tb;
              .SW(SW));
 
     initial begin
-		$display("Checking valid input...");
+	$display("Checking valid input...");
         SW = 10'b00111_00011;
-	    #1;
+	#1;
         assert(HEX5 == 7'b1111111);
-		assert(HEX4 == 7'b1111111);
-		assert(HEX3 == 7'b1111111);
-		assert(HEX2 == 7'b1111111);
-		assert(HEX1 == 7'b1111000);
-		assert(HEX0 == 7'b0110000);
+	assert(HEX4 == 7'b1111111);
+	assert(HEX3 == 7'b1111111);
+	assert(HEX2 == 7'b1111111);
+	assert(HEX1 == 7'b1111000);
+	assert(HEX0 == 7'b0110000);
         
-		$display("Checking invalid input (1)...");
+	$display("Checking invalid input (1)...");
         SW = 10'b10111_00011;
-	    #1;
+	#1;
         assert(HEX5 == 7'b0000011);
-		assert(HEX4 == 7'b0001000);
-		assert(HEX3 == 7'b0100001);
-		assert(HEX2 == 7'b1111111);
-		assert(HEX1 == 7'b1111111);
-		assert(HEX0 == 7'b0110000);
+	assert(HEX4 == 7'b0001000);
+	assert(HEX3 == 7'b0100001);
+	assert(HEX2 == 7'b1111111);
+	assert(HEX1 == 7'b1111111);
+	assert(HEX0 == 7'b0110000);
         
-		$display("Checking invalid input (2)...");
+	$display("Checking invalid input (2)...");
         SW = 10'b00111_11011;
-	    #1;
+	#1;
         assert(HEX5 == 7'b0000011);
-		assert(HEX4 == 7'b0001000);
-		assert(HEX3 == 7'b0100001);
-		assert(HEX2 == 7'b1111111);
-		assert(HEX1 == 7'b1111000);
-		assert(HEX0 == 7'b1111111);
+	assert(HEX4 == 7'b0001000);
+	assert(HEX3 == 7'b0100001);
+	assert(HEX2 == 7'b1111111);
+	assert(HEX1 == 7'b1111000);
+	assert(HEX0 == 7'b1111111);
 		  
-		$display("Checking invalid input (3)...");
+	$display("Checking invalid input (3)...");
         SW = 10'b10111_11011;
-	    #1;
+	#1;
         assert(HEX5 == 7'b0000011);
-		assert(HEX4 == 7'b0001000);
-		assert(HEX3 == 7'b0100001);
-		assert(HEX2 == 7'b1111111);
-		assert(HEX1 == 7'b1111111);
-		assert(HEX0 == 7'b1111111);
+	assert(HEX4 == 7'b0001000);
+	assert(HEX3 == 7'b0100001);
+	assert(HEX2 == 7'b1111111);
+	assert(HEX1 == 7'b1111111);
+	assert(HEX0 == 7'b1111111);
 		  
-		$display("BANANA!");
+	$display("BANANA!");
         SW = 10'b00111_01100;
-	    #1;
+	#1;
         assert(HEX5 == 7'b0000011);
-		assert(HEX4 == 7'b0001000);
-		assert(HEX3 == 7'b0101011);
-		assert(HEX2 == 7'b0001000);
-		assert(HEX1 == 7'b0101011);
-		assert(HEX0 == 7'b0001000);
+	assert(HEX4 == 7'b0001000);
+	assert(HEX3 == 7'b0101011);
+	assert(HEX2 == 7'b0001000);
+	assert(HEX1 == 7'b0101011);
+	assert(HEX0 == 7'b0001000);
 		 
-		$display("All Test Cases Passed!");
+	$display("All Test Cases Passed!");
    end
   endmodule
       
