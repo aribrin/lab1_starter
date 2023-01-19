@@ -59,7 +59,7 @@ module lab1_tb;
 	assert(HEX0 == 7'b1111111);
 		  
 	$display("BANANA!");
-        SW = 10'b00111_01100;
+        SW = 10'b00111_01010;
 	#1;
         assert(HEX5 == 7'b0000011);
 	assert(HEX4 == 7'b0001000);
