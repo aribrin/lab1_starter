@@ -1,6 +1,8 @@
 `timescale 1ns / 1ns
 `default_nettype none
-module lab1_tb;   
+module lab1_tb;
+    reg CLOCK_50 = 0;
+   
     logic [9:0] SW;
     logic [6:0] HEX0;
 	logic [6:0] HEX1;
@@ -20,8 +22,8 @@ module lab1_tb;
     initial begin
 		$display("Checking valid input...");
         SW = 10'b00111_00011;
-	    #1; // let the signal propagate
-        assert(HEX5 == 7'b1111111); 
+	    #1;
+        assert(HEX5 == 7'b1111111);
 		assert(HEX4 == 7'b1111111);
 		assert(HEX3 == 7'b1111111);
 		assert(HEX2 == 7'b1111111);
@@ -59,14 +61,16 @@ module lab1_tb;
 		assert(HEX0 == 7'b1111111);
 		  
 		$display("BANANA!");
-        SW = 10'b00111_0110;
+        SW = 10'b00111_00110;
 	    #1;
         assert(HEX5 == 7'b0000011);
 		assert(HEX4 == 7'b0001000);
 		assert(HEX3 == 7'b0101011);
 		assert(HEX2 == 7'b0001000);
 		assert(HEX1 == 7'b0101011);
-		assert(HEX0 == 7'b0001000); 
-    end
-endmodule
+		assert(HEX0 == 7'b0001000);
+		 
+		$display("All Test Cases Passed!");
+   end
+  endmodule
       
