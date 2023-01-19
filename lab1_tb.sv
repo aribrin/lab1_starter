@@ -1,8 +1,6 @@
 `timescale 1ns / 1ns
 `default_nettype none
-module lab1_tb;
-    reg CLOCK_50 = 0;
-   
+module lab1_tb;   
     logic [9:0] SW;
     logic [6:0] HEX0;
     logic [6:0] HEX1;
