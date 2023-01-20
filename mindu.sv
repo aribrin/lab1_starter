@@ -8,6 +8,8 @@ module minduDec (
 		 input logic [4:0]  binNum     // binary number [0-19]
 		 );
 
+   // TODO-1: If the input BCM value (binNum) is more than 19,
+   // TODO-1: display nothing on the 7-segment display.
    // TODO-1: create some logic for Segments
    // TODO-1: Segments[0] is LED A, Segments[1] is LED B
    // TODO-1: Segements is active LOW.  That is an LED is on when
