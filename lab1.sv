@@ -34,7 +34,7 @@ module lab1(
         // TODO-2: for the condition you might want to define a new wire (logic) as in
         // TODO-2: logic isBad;   // true if the input value is bad 
         // TODO-2: assign isBad =  
-        // TODO-2: logic isBanana;   // true if the input value is bad 
+        // TODO-2: logic isBanana;   // true if the input value encodes "7 10" 
         // TODO-2: assign isBanana =     
         // TODO-2:  
         // TODO-2: assign HEX5 =  (     )   ?    (     )   :    (     ); 
