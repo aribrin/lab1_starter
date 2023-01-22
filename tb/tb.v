@@ -56,6 +56,7 @@ module tb();
    lab1 d0 (.HEX5(HEX5), 
 	    .HEX4(HEX4), 
 	    .HEX3(HEX3), 
+	    .HEX2(HEX2),
 	    .HEX1(HEX1), .HEX0(HEX0), .SW(SW));
    
    keyboard_interface KeyBoard(CLOCK_50, ~KEY[0], 
