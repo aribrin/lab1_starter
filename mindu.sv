@@ -1,4 +1,3 @@
-	
 // lab1
 // ucsd CSE
 // 1/13/2023
@@ -44,41 +43,40 @@ module minduDec (
 	
 	always_comb begin
 		case (binNum)
-			5'b00000 : Segments = 7'b1111110;//0
-			5'b00001 : Segments = 7'b0110000;
-			5'b00010 : Segments = 7'b1101101;
-			5'b00011 : Segments = 7'b1111001;
-			5'b00100 : Segments = 7'b0110011;
-			5'b00101 : Segments = 7'b1110000;//5
-			5'b00110 : Segments = 7'b1011111;
-			5'b00111 : Segments = 7'b1110000;
-			5'b01000 : Segments = 7'b1111111;
-			5'b01001 : Segments = 7'b1110011;
-			5'b01010 : Segments = 7'b1110111;//10
-			5'b01011 : Segments = 7'b0011111;
-			5'b01100 : Segments = 7'b1001110;
-			5'b01101 : Segments = 7'b0111101;
-			5'b01110 : Segments = 7'b1001111;
-			5'b01111 : Segments = 7'b1000111;//15
-			5'b10000 : Segments = 7'b1111011;
-			5'b10001 : Segments = 7'b0110111;
-			5'b10010 : Segments = 7'b0010000;
-			5'b10011 : Segments = 7'b0111100;//19
-			5'b10100 : Segments = 7'b0000000;
-			5'b10101 : Segments = 7'b0000000;
-			5'b10110 : Segments = 7'b0000000;
-			5'b10111 : Segments = 7'b0000000;
-			5'b11000 : Segments = 7'b0000000;
-			5'b11001 : Segments = 7'b0000000;
-			5'b11010 : Segments = 7'b0000000;
-			5'b11011 : Segments = 7'b0000000;
-			5'b11100 : Segments = 7'b0000000;
-			5'b11101 : Segments = 7'b0000000;
-			5'b11110 : Segments = 7'b0000000;
-			5'b11111 : Segments = 7'b0000000;
-	    endcase
+		5'b00000 : Segments = 7'b0000001;//0
+		5'b00001	: Segments = 7'b1001111;
+		5'b00010	: Segments = 7'b0010010;
+		5'b00011	: Segments = 7'b0000110;
+		5'b00100	: Segments = 7'b1001100;
+		5'b00101	: Segments = 7'b0100100;//5
+		5'b00110	: Segments = 7'b0100000;
+		5'b00111	: Segments = 7'b0001111;
+		5'b01000	: Segments = 7'b0000000;
+		5'b01001	: Segments = 7'b0001100;
+		5'b01010	: Segments = 7'b0001000;//10
+		5'b01011	: Segments = 7'b1100000;
+		5'b01100	: Segments = 7'b0110001;
+		5'b01101	: Segments = 7'b1000010;
+		5'b01110	: Segments = 7'b0110000;
+		5'b01111	: Segments = 7'b0111000;//15
+		5'b10000	: Segments = 7'b0000100;
+		5'b10001	: Segments = 7'b1101111;
+		5'b10010	: Segments = 7'b1101111;
+		5'b10011	: Segments = 7'b1000011;//19
+		5'b10100	: Segments = 7'b1111111;
+		5'b10101	: Segments = 7'b1111111;
+		5'b10110	: Segments = 7'b1111111;
+		5'b10111	: Segments = 7'b1111111;
+		5'b11000	: Segments = 7'b1111111;
+		5'b11001	: Segments = 7'b1111111;
+		5'b11010	: Segments = 7'b1111111;
+		5'b11011	: Segments = 7'b1111111;
+		5'b11100	: Segments = 7'b1111111;
+		5'b11101	: Segments = 7'b1111111;
+		5'b11110	: Segments = 7'b1111111;
+		5'b11111	: Segments = 7'b1111111;
+    endcase
 	end
 
 endmodule
 	
-
