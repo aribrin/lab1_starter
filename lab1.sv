@@ -86,18 +86,18 @@ module lab1(
 				
 				always_comb begin
 				if (isBannana) begin
-						HEX5 = 7'b0001111; //b
+						HEX5 = 7'b0000011; //b
 						HEX4 = 7'b0001000; //a
-						HEX3 = 7'b1101010; //n
+						HEX3 = 7'b0101011; //n
 						HEX2 = 7'b0001000;
-						HEX1 = 7'b1101010;
+						HEX1 = 7'b0101011;
 						HEX0 = 7'b0001000;
 				end
 				else 
 					if (isBad) begin	
-							HEX5 = 7'b0001111; 
+							HEX5 = 7'b0000011; 
 							HEX4 = 7'b0001000;
-							HEX3 = 7'b1000010;//d
+							HEX3 = 7'b0100001;//d
 							HEX2 = 7'b1111111;
 							HEX1 = temp2;
 							HEX0 = temp1;
