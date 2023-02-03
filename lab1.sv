@@ -75,7 +75,7 @@ module lab1(
 				//logic bothBad;
 				//logic normal;
 				
-				assign isBannana = ((SW[4:0] == 5'b00111) & (SW[9:5] == 5'b01010));
+				assign isBannana = ((SW[4:0] == 5'b01010) & (SW[9:5] == 5'b00111));
 				assign isBad = (((SW[4]&SW[3]) | (SW[4]&SW[2])) | ((SW[9]&SW[8]) | (SW[9]&SW[7])));
 				
 				//assign only1 = ((isBad1) & (!isBad2)); //only first 4 bits are bad
